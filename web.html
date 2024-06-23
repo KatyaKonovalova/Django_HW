@@ -39,7 +39,7 @@
             flex-wrap: nowrap;
             height: 100vh;
             height: -webkit-fill-available;
-            max-height: 100vh;
+            max-height: 150vh;
             overflow-x: auto;
             overflow-y: hidden;
         }
@@ -47,7 +47,7 @@
         .b-example-divider {
             flex-shrink: 0;
             width: 1.5rem;
-            height: 100vh;
+            height: 120vh;
             background-color: rgba(0, 0, 0, .1);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
@@ -281,10 +281,108 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="btn btn-success w-100 btn btn-lg btn-outline">Купить</button>
                         </div>
                     </div>
                 </div>
+                <div class="col-8">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName1" class="form-label">Имя</label>
+                                    <input type="email" class="form-control" id="exampleInputName1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <p class="h3 text-center mt-2">FAQ</p>
+                    <div class="card-body text-center">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer1" role="button"
+                               aria-expanded="false" aria-controls="collapseExample1">
+                                Как купить?
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer2" role="button"
+                               aria-expanded="false" aria-controls="collapseExample2">
+                                Как доставить?
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer3" role="button"
+                               aria-expanded="false" aria-controls="collapseExample3">
+                                Какая гарантия?
+                            </a>
+                        </p>
+                        <div class="collapse" id="answer1">
+                            <div class="card card-body">
+                                Выберите товар, положите в корзину, оформите заказ.
+                            </div>
+                        </div>
+                        <div class="collapse" id="answer2">
+                            <div class="card card-body">
+                                Заполните форму с адресом для доставки курьером или выберите удобный ПВЗ.
+                            </div>
+                        </div>
+                        <div class="collapse" id="answer3">
+                            <div class="card card-body">
+                                100 % гарантия.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Книга</td>
+                        <td>700</td>
+                        <td>1</td>
+                        <td>700</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                       <th scope="row">2</th>
+                        <td>Манга в твердом переплете</td>
+                        <td>850</td>
+                        <td>2</td>
+                        <td>1700</td>
+                        <td class="table-warning">Обработка</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Манга в мягком переплете</td>
+                        <td>480</td>
+                        <td>3</td>
+                        <td>1440</td>
+                        <td class="table-success">Обработан</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Новелла</td>
+                        <td>1800</td>
+                        <td>1</td>
+                        <td>1800</td>
+                        <td class="table-danger">Отменен</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
 
